@@ -1,11 +1,11 @@
 <?php include 'config.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $login = $_POST['login'];
-    $prenom = $_POST['prenom'];
-    $nom = $_POST['nom'];
-    $password = $_POST['password'];
-    $confirm_password = $_POST['confirm_password'];
+    $login = htmlspecialchars($_POST['login']);
+    $prenom = htmlspecialchars($_POST['prenom']);
+    $nom = htmlspecialchars($_POST['nom']);
+    $password = htmlspecialchars($_POST['password']);
+    $confirm_password =htmlspecialchars( $_POST['confirm_password']);
 
     if ($password !== $confirm_password) {
         $error = "Les mots de passe ne correspondent pas";
