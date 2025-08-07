@@ -115,7 +115,7 @@ nav a:hover {
 /* Tableau */
 .table-container {
     overflow-x: auto;
-    margin: 20px 0;
+    margin: 20px 0 auto;
 }
 
 table {
@@ -125,7 +125,7 @@ table {
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
@@ -135,7 +135,7 @@ th {
 }
 
 tr:hover {
-    background: #f5f5f5;
+    background: #c9d2f453;
 }
 footer {
     text-align: center;
