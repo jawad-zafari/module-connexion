@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $prenom = htmlspecialchars($_POST['prenom']);
     $nom = htmlspecialchars($_POST['nom']);
     $password = htmlspecialchars($_POST['password']);
-    $confirm_password =htmlspecialchars( $_POST['confirm_password']);
+    $confirm_password = htmlspecialchars( $_POST['confirm_password']);
 
     if ($password !== $confirm_password) {
         $error = "Les mots de passe ne correspondent pas";

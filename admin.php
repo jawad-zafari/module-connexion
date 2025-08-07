@@ -43,14 +43,14 @@ $users = $bdd->query("SELECT * FROM utilisateurs")->fetchAll();
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($users as $user): ?>
-                        <tr>
-                            <td><?php echo $user['id']; ?></td>
-                            <td><?php echo $user['login']; ?></td>
-                            <td><?php echo $user['prenom']; ?></td>
-                            <td><?php echo $user['nom']; ?></td>
-                        </tr>
-                    <?php endforeach; ?>
+                     <?php foreach ($users as $user): ?>
+                            <tr>
+                                <td><?= htmlspecialchars($user['id']) ?></td>
+                                <td><?= htmlspecialchars($user['login']) ?></td>
+                                <td><?= htmlspecialchars($user['prenom']) ?></td>
+                                <td><?= htmlspecialchars($user['nom']) ?></td>
+                            </tr>
+                        <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
